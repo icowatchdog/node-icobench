@@ -48,7 +48,7 @@ var sendRequest = async function(ctx, url, data){
 		// Sign JSON
 		let signedData = signRequest(ctx, json);
 		let config = {
-			timeout: 60000,
+			timeout: 12000,
 			headers: {
 				'X-ICObench-Key': ctx.publicKey,
 				'X-ICObench-Sig': signedData,
